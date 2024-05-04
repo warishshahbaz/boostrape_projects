@@ -1,0 +1,74 @@
+main {
+  width: 100%;
+}
+
+.carousel-item img {
+  height: 90vh;
+  object-fit: fill;
+}
+.card_container {
+  margin-top: 22px;
+  padding: 22px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer_container {
+  display: flex;
+  justify-content: space-around;
+}
+.conatiner_main_footer {
+  background-color: #f8f9fa;
+
+  padding: 22px;
+}
+.footer_box {
+  display: flex;
+  flex-direction: column;
+}
+.footer_box a {
+}
+.copy_right_container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 12px;
+}
+.copy_right_container p {
+  color: gray;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
